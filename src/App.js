@@ -13,19 +13,19 @@ class App extends React.Component {
       text: quotes[randomNum].text,
       quoteIndex: randomNum,
     };
-    this.handleClick = this.handleClick.bind(this);
     this.getRandomQuote = this.getRandomQuote.bind(this);
   }
 
   getRandomQuote() {
     let randomNum;
-    while (randomNum === this.state.quoteIndex) {
+    do {
       randomNum = Math.floor(Math.random() * quotes.length);
-    }
-    return quotes[randomNum];
+    } while (randomNum === this.state.quoteIndex);
+    this.setState({
+      text: quotes[randomNum].text,
+      quoteIndex: randomNum,
+    });
   }
-
-  handleClick() {}
 
   render() {
     return (
@@ -36,7 +36,7 @@ class App extends React.Component {
           <a href="https://twitter.com">
             <FontAwesomeIcon icon={faSquareTwitter} />
           </a>
-          <button id="new-quote" onClick={this.handleClick}>
+          <button id="new-quote" onClick={this.getRandomQuote}>
             New Quote
           </button>
         </div>
