@@ -35,7 +35,13 @@ class App extends React.Component {
         <p id="text">{this.state.text}</p>
         <p id="author">{this.state.author}</p>
         <div id="buttons">
-          <a href="https://twitter.com">
+          <a
+            href={
+              "https://twitter.com/intent/tweet?text=" +
+              this.state.text +
+              "&hashtags=quote"
+            }
+          >
             <FontAwesomeIcon icon={faSquareTwitter} />
           </a>
           <button id="new-quote" onClick={this.getRandomQuote}>
