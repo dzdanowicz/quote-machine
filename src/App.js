@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import quotes from "./quotes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -10,8 +10,9 @@ class App extends React.Component {
     super(props);
     const randomNum = Math.floor(Math.random() * quotes.length);
     this.state = {
-      text: quotes[randomNum].text,
       quoteIndex: randomNum,
+      text: quotes[randomNum].text,
+      author: quotes[randomNum].author,
     };
     this.getRandomQuote = this.getRandomQuote.bind(this);
   }
@@ -22,8 +23,9 @@ class App extends React.Component {
       randomNum = Math.floor(Math.random() * quotes.length);
     } while (randomNum === this.state.quoteIndex);
     this.setState({
-      text: quotes[randomNum].text,
       quoteIndex: randomNum,
+      text: quotes[randomNum].text,
+      author: quotes[randomNum].author,
     });
   }
 
@@ -31,7 +33,7 @@ class App extends React.Component {
     return (
       <div id="quote-box">
         <p id="text">{this.state.text}</p>
-        <p id="author"></p>
+        <p id="author">{this.state.author}</p>
         <div id="buttons">
           <a href="https://twitter.com">
             <FontAwesomeIcon icon={faSquareTwitter} />
