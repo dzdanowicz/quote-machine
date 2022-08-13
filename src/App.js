@@ -39,8 +39,12 @@ class App extends React.Component {
             href={
               "https://twitter.com/intent/tweet?text=" +
               this.state.text +
-              "&hashtags=quote"
+              "%0a%0a-" +
+              this.state.author +
+              "%0a&hashtags=quote"
             }
+            target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faSquareTwitter} />
           </a>
