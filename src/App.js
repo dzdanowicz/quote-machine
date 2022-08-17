@@ -2,7 +2,7 @@ import React from "react";
 // import ReactDOM from "react-dom";
 import quotes from "./quotes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 
 class App extends React.Component {
