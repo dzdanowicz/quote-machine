@@ -31,26 +31,38 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="quote-box">
-        <p id="text">{this.state.text}</p>
-        <p id="author">{this.state.author}</p>
-        <div id="buttons">
-          <a
-            href={
-              "https://twitter.com/intent/tweet?text=" +
-              this.state.text +
-              "%0a%0a-" +
-              this.state.author +
-              "%0a&hashtags=quote"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
+      <div id="quote-box" className="container">
+        <blockquote className="blockquote">
+          <p id="text">{this.state.text}</p>
+          <footer id="author" className="blockquote-footer">
+            {this.state.author}
+          </footer>
+        </blockquote>
+        <div className="row">
+          <div className="col-6">
+            <a
+              href={
+                "https://twitter.com/intent/tweet?text=" +
+                this.state.text +
+                "%0a%0a-" +
+                this.state.author +
+                "%0a&hashtags=quote"
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-          <button id="new-quote" onClick={this.getRandomQuote}>
-            New Quote
-          </button>
+          </div>
+          <div className="col-6">
+            <button
+              id="new-quote"
+              className="btn btn-primary"
+              onClick={this.getRandomQuote}
+            >
+              New Quote
+            </button>
+          </div>
         </div>
       </div>
     );
