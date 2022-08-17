@@ -46,8 +46,8 @@ class App extends React.Component {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faSquareTwitter} />
-          </a>
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
           <button id="new-quote" onClick={this.getRandomQuote}>
             New Quote
           </button>
