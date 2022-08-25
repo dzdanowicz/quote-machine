@@ -2,7 +2,7 @@ import React from "react";
 // import ReactDOM from "react-dom";
 import quotes from "./quotes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 
 class App extends React.Component {
@@ -50,8 +50,9 @@ class App extends React.Component {
               }
               target="_blank"
               rel="noreferrer"
+              className="twitter-link"
             >
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faSquareTwitter} />
             </a>
           </div>
           <div className="col-6">
