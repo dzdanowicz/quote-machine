@@ -3,6 +3,10 @@
   background-color: red;
 }
 
+blockquote {
+  min-height: 160px;
+}
+
 #text {
   font-family: "Noto Serif";
 }
