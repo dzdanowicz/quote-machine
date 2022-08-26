@@ -3,12 +3,13 @@
   background-color: red;
 }
 
-blockquote {
+.blockquote {
   min-height: 160px;
 }
 
 #text {
   font-family: "Noto Serif";
+  text-align: center;
 }
 
 .col-6 {
