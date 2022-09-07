@@ -1,3 +1,7 @@
+body {
+  background-color: #e3cab860;
+}
+
 .container {
   max-width: 720px;
   background-color: antiquewhite;
@@ -15,6 +19,7 @@
 #text {
   font-family: "Noto Serif";
   text-align: center;
+  padding: 20px 0 16px 0;
 }
 
 .col-6 {

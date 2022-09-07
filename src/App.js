@@ -32,7 +32,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="quote-box" className="container">
+      <div id="quote-box" className="container shadow">
         <blockquote className="blockquote">
           <p id="text">
             <FontAwesomeIcon icon={faQuoteLeft} />
