@@ -1,6 +1,7 @@
 .container {
   max-width: 720px;
-  background-color: red;
+  background-color: antiquewhite;
+  border-radius: 13px;
 }
 
 .blockquote {
