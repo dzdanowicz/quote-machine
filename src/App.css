@@ -72,6 +72,10 @@ body {
   .btn:hover {
     filter: brightness(115%);
   }
+
+  .blockquote {
+    min-height: 155px;
+  }
 }
 
 .btn:focus {
