@@ -54,6 +54,7 @@ class App extends React.Component {
               }
               target="_blank"
               rel="noreferrer"
+              id="tweet-quote"
               className="twitter-link"
             >
               <FontAwesomeIcon icon={faSquareTwitter} />

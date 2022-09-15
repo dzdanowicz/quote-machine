@@ -54,6 +54,7 @@ body {
   outline: 2px solid black;
   border: none;
   transition: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn:active {
