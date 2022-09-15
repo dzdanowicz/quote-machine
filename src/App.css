@@ -1,3 +1,9 @@
+:root {
+  --btn-color: #f5b73b90;
+  --btn-shadow: 4px 4px 0px 1px black;
+  --btn-active-shadow: 2px 2px 0px 0px black;
+}
+
 body {
   background-color: #e3cab860;
 }
@@ -22,6 +28,10 @@ body {
   padding: 20px 0 16px 0;
 }
 
+.row {
+  padding-bottom: 10px;
+}
+
 .col-6 {
   display: flex;
   align-items: center;
@@ -33,4 +43,41 @@ body {
 
 .twitter-link {
   font-size: 30px;
+  color: #1da1f2;
+}
+
+.btn {
+  background-color: var(--btn-color);
+  border-radius: 15px;
+  box-shadow: var(--btn-shadow);
+  font-size: 18px;
+  outline: 2px solid black;
+  border: none;
+  transition: none;
+}
+
+.btn:active {
+  box-shadow: var(--btn-active-shadow);
+  background-color: var(--btn-color);
+  border-color: var(--btn-color);
+  transform: translate(2px, 2px);
+}
+
+.btn:hover {
+  background-color: var(--btn-color);
+  border-color: var(--btn-color);
+  filter: brightness(115%);
+}
+
+.btn:focus {
+  background-color: var(--btn-color);
+  box-shadow: var(--btn-shadow);
+}
+
+.btn:focus:not(:focus-visible) {
+  outline: 2px solid black;
+}
+
+.btn:active:focus {
+  box-shadow: var(--btn-active-shadow);
 }

@@ -63,7 +63,7 @@ class App extends React.Component {
           <div className="col-6">
             <button
               id="new-quote"
-              className="btn btn-primary"
+              className="btn"
               onClick={this.getRandomQuote}
             >
               New Quote
