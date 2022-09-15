@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactDOM from "react-dom";
 import quotes from "./quotes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";

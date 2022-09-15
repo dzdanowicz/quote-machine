@@ -68,16 +68,6 @@ body {
   border-color: var(--btn-color);
 }
 
-@media (min-width: 1025px) {
-  .btn:hover {
-    filter: brightness(115%);
-  }
-
-  .blockquote {
-    min-height: 155px;
-  }
-}
-
 .btn:focus {
   background-color: var(--btn-color);
   box-shadow: var(--btn-shadow);
@@ -89,4 +79,14 @@ body {
 
 .btn:active:focus {
   box-shadow: var(--btn-active-shadow);
+}
+
+@media (min-width: 1025px) {
+  .btn:hover {
+    filter: brightness(115%);
+  }
+
+  .blockquote {
+    min-height: 155px;
+  }
 }
